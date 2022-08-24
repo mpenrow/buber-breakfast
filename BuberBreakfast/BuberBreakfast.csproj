@@ -10,4 +10,8 @@
     <ProjectReference Include="..\BuberBreakfast.Contracts\BuberBreakfast.Contracts.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ErrorOr" Version="1.0.0" />
+  </ItemGroup>
+
 </Project>
