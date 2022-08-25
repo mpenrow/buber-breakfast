@@ -52,7 +52,7 @@ public class Breakfast
       errors.Add(Errors.Breakfast.InvalidName);
     }
 
-    if (description.Length is < MinNameLength or > MaxNameLength)
+    if (description.Length is < MinDescriptionLength or > MaxDescriptionLength)
     {
       errors.Add(Errors.Breakfast.InvalidDescription);
     }
