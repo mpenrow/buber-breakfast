@@ -1,4 +1,5 @@
 using BuberBreakfast.ServiceErrors;
+using BuberBreakfast.Contracts.Breakfast;
 using ErrorOr;
 
 namespace BuberBreakfast.Models;
@@ -71,5 +72,28 @@ public class Breakfast
       DateTime.UtcNow,
       savory,
       sweet);
+  }
+
+  public static ErrorOr<Breakfast> From(CreateBreakfastRequest request)
+  {
+    return Create(
+      request.Name,
+      request.Description,
+      request.StartDateTime,
+      request.EndDateTime,
+      request.Savory,
+      request.Sweet);
+  }
+
+  public static ErrorOr<Breakfast> From(Guid id, UpsertBreakfastRequest request)
+  {
+    return Create(
+      request.Name,
+      request.Description,
+      request.StartDateTime,
+      request.EndDateTime,
+      request.Savory,
+      request.Sweet,
+      id);
   }
 }

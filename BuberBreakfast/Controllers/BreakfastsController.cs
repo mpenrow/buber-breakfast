@@ -19,13 +19,7 @@ public class BreakfastsController : ApiController
   [HttpPost]
   public IActionResult CreateBreakfast(CreateBreakfastRequest request)
   {
-    ErrorOr<Breakfast> requestToBreakfastResult = Breakfast.Create(
-      request.Name,
-      request.Description,
-      request.StartDateTime,
-      request.EndDateTime,
-      request.Savory,
-      request.Sweet);
+    ErrorOr<Breakfast> requestToBreakfastResult = Breakfast.From(request);
 
     if (requestToBreakfastResult.IsError)
     {
@@ -53,14 +47,7 @@ public class BreakfastsController : ApiController
   [HttpPut("{id:guid}")]
   public IActionResult UpsertBreakfast(Guid id, UpsertBreakfastRequest request)
   {
-    ErrorOr<Breakfast> requestToBreakfastResult = Breakfast.Create(
-      request.Name,
-      request.Description,
-      request.StartDateTime,
-      request.EndDateTime,
-      request.Savory,
-      request.Sweet,
-      id);
+    ErrorOr<Breakfast> requestToBreakfastResult = Breakfast.From(id, request);
 
     if (requestToBreakfastResult.IsError)
     {
