@@ -1,19 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberBreakfast.Contracts", "BuberBreakfast.Contracts\BuberBreakfast.Contracts.csproj", "{8611D804-1CA1-43E0-9083-95E73301D71A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberBreakfast.Contracts", "BuberBreakfast.Contracts\BuberBreakfast.Contracts.csproj", "{8611D804-1CA1-43E0-9083-95E73301D71A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberBreakfast", "BuberBreakfast\BuberBreakfast.csproj", "{FAB80438-CCBA-4F83-B660-8B6A92ED59EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberBreakfast", "BuberBreakfast\BuberBreakfast.csproj", "{FAB80438-CCBA-4F83-B660-8B6A92ED59EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{01164D55-0B91-4D80-A7A6-E4730177D5CD}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Api.md = Docs\Api.md
+		Requests\Breakfast\CreateBreakfast.http = Requests\Breakfast\CreateBreakfast.http
+		Requests\Breakfast\DeleteBreakfast.http = Requests\Breakfast\DeleteBreakfast.http
+		Requests\Breakfast\GetBreakfast.http = Requests\Breakfast\GetBreakfast.http
+		Requests\Breakfast\UpsertBreakfast.http = Requests\Breakfast\UpsertBreakfast.http
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8611D804-1CA1-43E0-9083-95E73301D71A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +30,11 @@ Global
 		{FAB80438-CCBA-4F83-B660-8B6A92ED59EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAB80438-CCBA-4F83-B660-8B6A92ED59EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAB80438-CCBA-4F83-B660-8B6A92ED59EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEACF31A-1AC7-4FFF-A62D-8F1B14F5607D}
 	EndGlobalSection
 EndGlobal
