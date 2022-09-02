@@ -3,7 +3,6 @@ using BuberBreakfast.Contracts.Breakfast;
 using BuberBreakfast.Models;
 using BuberBreakfast.Services.Breakfasts;
 using ErrorOr;
-using BuberBreakfast.ServiceErrors;
 
 namespace BuberBreakfast.Controllers;
 

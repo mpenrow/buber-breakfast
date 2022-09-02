@@ -6,7 +6,7 @@ namespace BuberBreakfast.Services.Breakfasts;
 
 public class BreakfastService : IBreakfastService
 {
-  // Using memroy data for example.  Would use a permament data store for production.
+  // Using memory data for example.  Would use a permament data store for production.
   private static readonly Dictionary<Guid, Breakfast> _breakfasts = new();
 
   public ErrorOr<Created> CreateBreakfast(Breakfast breakfast)
